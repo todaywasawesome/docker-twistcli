@@ -10,6 +10,7 @@ RUN apk add --no-cache \
         docker \
         git \
         nodejs
+RUN npm config set unsafe-perm true
 RUN pip install requests
 RUN npm install codefresh -g 
 RUN chmod +x /usr/local/bin/twistcli
